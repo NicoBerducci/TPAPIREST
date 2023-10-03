@@ -7,7 +7,7 @@ RUN apk add openjdk17
 WORKDIR /app
 
 # Copia los archivos desde el directorio del proyecto
-COPY ./TPAPIREST/TP\ API\ REST\ sin\ paginacion/TPApiRest /app
+COPY ./TPAPIREST/TP API REST sin paginacion/TPApiRest/.
 
 RUN chmod +x ./gradlew
 RUN ./gradlew bootJar --no-daemon
